@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Example</title>
+</head>
+<body>
+    <div>
+
+        <h2>Js Example</h2>
+        <div>
+<table>
+    <tr>
+<td>Username</td>
+<td><input type="text" id="user"name="user"/></td>
+    </tr>
+    <tr>
+<td>Password</td>
+<td><input type="password" id="pswd"name="pswd"/></td>
+</tr>
+<tr>
+<td></td>
+<td><input type ="button"value="login"onclic="checklogin()"class="btn"/></td>
+</tr> 
+</table>
+
+        </div>
+    </div>
+
+    <style>
+.btn{
+    background-color: rgb(129, 161, 175);
+}
+    </style>
+    <script>
+function checkLogin(){
+    let user=document.getElementById("user").value;
+    let pswd=document.getElementById("pswd").value;
+
+    console.log(user,pswd);
+    console.log(document);
+    console.log(document.getElementById('user'));
+    console.log(document.getElementByName('pswd'));
+    console.log(document.getElementByClassName('btn'));
+    console.log(document.getElementByTagName('input'));
+   
+   window.location.href='./path.html';
+
+
+
+}
+
+
+
+    </script>
+    
+</body>
+</html>

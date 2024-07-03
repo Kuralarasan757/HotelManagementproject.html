@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Topics</title>
+</head>
+<body>
+    <div>
+        <h2>Js Topics</h2>
+        <div>
+        <h3>Conditions</h3>
+        <input type="text"name="markCdn"id="markCdn"onkeyup="markCategory()"/>
+        <p id="markCalcMsg"></p>
+        <script>
+        function markCategory(){
+            let markCdn=Number(document.getElementById('markCdn').value);
+            let markCalcMsg=document.getElementById('markCalcMsg');
+            let result="";
+            markCalcMsg.innerHTML=result;
+        
+        if((markCdn>90)&&(markCdn<100)){
+        result="A";
+        }else if((markCdn>80)&&(markCdn<90)){
+            result="B";
+        }else if((markCdn>70)&&(markCdn<80)){
+            result="C";
+        }else if((markCdn>60)&&(markCdn<70)){
+            result="D";
+        }
+        else if((markCdn>50)&&(markCdn<60)){
+            result="E";
+        }
+        else if(markCdn<50){
+            result="F";
+        }
+        markCalcMsg.innerHTML=result;
+        }
+        
+        </script>
+        </div>
+         </div>
+          
+</body>
+</html>

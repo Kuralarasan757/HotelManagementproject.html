@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Topics</title>
+</head>
+<body>
+    <div>
+        <h2>Js Topics</h2>
+        <div>
+        <h3>Conditions</h3>
+        <input type="text"name="digitCdn"id="digitCdn"onkeyup="digitCategory()"/>
+        <p id="digitCalcMsg"></p>
+        <script>
+        function digitCategory(){
+            let digitCdn=Number(document.getElementById('digitCdn').value);
+            let digitCalcMsg=document.getElementById('digitCalcMsg');
+            let result="";
+            digitCalcMsg.innerHTML=result;
+        
+        if((digitCdn>=0)&&(digitCdn<=9)){ 
+        result="Single Digit";
+        }
+        else if((digitCdn>=10)&&(digitCdn<=99)){
+            result="Double Digit";
+        }
+        else if((digitCdn>=100)&&(digitCdn<=999)){
+            result="Triple Digit";
+        }
+        digitCalcMsg.innerHTML=result;
+        }
+        
+        </script>
+        </div>
+         </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Topics</title>
+</head>
+<body>
+    <div>
+        <h2>Js Topics</h2>
+        <div>
+        <h3>Conditions</h3>
+        <input type="text"name="digitCdn"id="digitCdn"onkeyup="digitCategory()"/>
+        
+        <p id="digitCalcMsg"></p>
+        <script>
+        function digitCategory(){
+            let digitCdn=Number(document.getElementById('digitCdn').value);
+            let digitCalcMsg=document.getElementById('digitCalcMsg');
+            let result="";
+            digitCalcMsg.innerHTML=result;
+          
+        if(digitCdn%2==0){ 
+        result="Even Number";
+        }
+        else {
+            let count=0;
+            if (digitCdn%2!==0)
+            {
+              count+=1;
+              result=count +digitCdn ;
+            }else{
+                result="Odd Number";
+            }    
+        }
+        digitCalcMsg.innerHTML=result;
+        }
+        
+        </script>
+        </div>
+         </div>
+   
+</body>
+</html>

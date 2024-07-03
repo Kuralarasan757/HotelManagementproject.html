@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Topics</title>
+</head>
+<body>
+    <div>
+        <h2>Js Topics</h2>
+        <input type="text" name="calcVal1" id="calcVal1"/>
+        <input type="text" name="calcVal2" id="calcVal2"/>
+        <br><br>
+        <button type="button" onclick="calc('add')">ADD</button>
+        <button type="button" onclick="calc('sub')">SUB</button>
+        <button type="button" onclick="calc('mul')">MUL</button>
+        <button type="button" onclick="calc('div')">DIV</button>
+        <div>
+            <h3>Switch</h3>
+            <script>
+                function calc(action){
+
+                    let val1 = Number(document.getElementById('calcVal1').value);                    
+                    let val2 = Number(document.getElementById('calcVal2').value);
+                    let result = 0;
+
+                     switch(action){
+
+                       case 'add':
+                             result = val1 + val2;
+                             break;
+                         case 'sub':
+                             result = val1 - val2;
+                             break;
+                         case 'mul':
+                             result = val1 * val2;
+                             break;
+                         case 'div': 
+                             result = val1 / val2;
+                             break;
+                         default: 
+                             result = "Invalid Option";                            
+                     }
+                   
+                alert(result);
+                }
+            </script>
+        </div>
+      
+</body>
+</html>

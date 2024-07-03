@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Example</title>
+</head>
+<body>
+    <div>
+<h2>Js Topics</h2>
+
+<button type="button"onclick="printMsg('onClick Event Called')" class="btn btn-primary">Click me</button>
+
+<img src ="./d9.jpg"style ="width:200px"onmouseover="printMsg('MouseOver Event Called')"/>
+
+<img src ="./d9.jpg"style ="width:200px"onmousout="printMsg('MouseOut Event Called')"/>
+
+<img src ="./d9.jpg"style ="width:200px"onclick="printMsg('Click Event Called')"/>
+
+
+<br>
+<input type="text" onkeydown="printMsg('onkeyDown event Called')"placeholder="On Key Down"/>
+
+<input type="text" onkeyup="printMsg('onkeyUp event Called')"placeholder="On Key Up"/>
+
+<input type="text" onkeypress="printMsg('onkeypress eventCalled')"placeholder="On Key press"/>
+
+<select onchange="printMsg('on select event')">
+<option>--select--</option>
+<option>TN</option>
+<option>KA</option>
+<option>KL</option>
+<option>AP</option>
+</select>
+<input type="text" onselect="printMsg('select event')"placeholder="On Select"/>
+<script>
+let fName="kural";
+var age=24;
+const BORNCOUNTRY="India";
+let isMajor=true;
+
+console.log(fName);
+console.log(age);
+console.log(BORNCOUNTRY);
+console.log(isMajor);
+
+ fName="kalai";
+ age=14;
+ //BORNCOUNTRY="India";
+ isMajor=false;
+
+ console.log(fName);
+console.log(age);
+console.log(BORNCOUNTRY);
+console.log(isMajor);
+
+console.log (subject);
+//console.log(mark);
+
+var subject="Tamil";
+let mark=90;
+
+
+console.log (subject);
+console.log(mark);
+
+//with parameter with return
+ 
+function add(v1,v2){
+    return(v1+v2);
+}
+////with parameter without return
+function sub(v1,v2){
+  console.log (v1-v2);
+}
+//without parameter with return
+ 
+function sayHi(){
+    return("Hi da");
+}
+
+var msg = "Good Morning";
+
+function printmsg(){
+    console.log(msg);
+}
+console.log (add(10,10));
+sub(20,10);
+console.log(sayHi());
+printmsg();
+
+function printHello(){
+    console.log("hi");
+}
+function loadEx(){
+    alert("Loading");
+}
+printHello();
+console.log( loadEx());
+</script>
+
+
+
+    </div>
+    
+</body>
+</html>

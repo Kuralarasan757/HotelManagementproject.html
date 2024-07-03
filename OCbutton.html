@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button</title>
+</head>
+<body>
+    <button id="toggleButton" class="button" onclick="toggleButton()">open</button>
+
+  <script>
+    function toggleButton() {
+      const button = document.getElementById('toggleButton');
+      if (button.innerText === 'open') {
+        button.innerText = 'close';
+      } else {
+        button.innerText = 'open';
+      }
+    }
+  </script>
+  <style>
+    .button {
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+
+</body>
+</html>
